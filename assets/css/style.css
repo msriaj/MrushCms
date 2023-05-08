@@ -1,10 +1,10 @@
 /* Google Font- "Poppins" */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 
 /* ||Common Css Start|| */
 body {
-    font-family: "Poppins", sans-serif;
-    margin: auto;
+    font-family: "Inter", sans-serif;
+    /* overflow: hidden; */
 }
 h1,
 h2,
@@ -21,12 +21,12 @@ a,
 a:hover {
     text-decoration: none;
 }
-/* ul {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-ul li {
+/* ul li {
     display: inline-block;
     text-decoration: none;
 } */
@@ -38,7 +38,101 @@ ul li {
     --first-transition: all 0.3s linear;
     --slow-transition: all 0.4s linear;
     /*font*/
-    --regular-font-color: #000;
-    --secondary-font-color: #949daf;
+    --regular-font-color: #101828;
+    --secondary-font-color: #667085;
 }
 /* ||Common Css End|| */
+
+/* Side Nav Css Start */
+#side_nav {
+    background-color: var(--focus-color);
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    padding: 30px 16px;
+    overflow-y: scroll;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none;
+}
+#side_nav::-webkit-scrollbar {
+    display: none;
+}
+#side_nav .nav_logo img {
+    width: 83px;
+    padding-bottom: 24px;
+}
+
+#side_nav .menu_item li {
+    background: var(--focus-color);
+    margin-bottom: 10px;
+    border-radius: 6px;
+    color: var(--prime-color);
+    transition: var(--first-transition);
+}
+#side_nav .menu_item a {
+    display: block;
+    color: var(--prime-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 8px 12px;
+    transition: var(--first-transition);
+}
+#side_nav .menu_item a i {
+    padding-right: 5px;
+}
+#side_nav .menu_item li:hover {
+    background: var(--prime-color);
+    color: var(--focus-color);
+}
+#side_nav .menu_item li:hover a {
+    color: var(--focus-color);
+}
+
+#side_nav .menu_item .dropdown_menu {
+    overflow: hidden;
+    transition: var(--first-transition) !important;
+}
+#side_nav .menu_item .dropdown_menu > li {
+    position: relative;
+    z-index: 11;
+    transition: var(--first-transition);
+}
+#side_nav .menu_item .dropdown_menu li .dropdown_icon i {
+    padding-right: 10px;
+}
+
+#side_nav .menu_item .dropdown_item {
+    position: relative;
+    display: none;
+    z-index: -1;
+    margin-top: 190px;
+    transition: var(--first-transition) !important;
+}
+#side_nav .menu_item .dropdown_menu:hover .dropdown_item {
+    display: block;
+    z-index: 1;
+    margin-top: 0;
+}
+#side_nav .menu_item .dropdown_menu:hover > li {
+    background: var(--prime-color);
+    color: var(--focus-color);
+}
+#side_nav .menu_item .dropdown_menu:hover > li a {
+    color: var(--focus-color);
+}
+
+#side_nav .menu_item .dropdown_menu .dropdown_item li {
+    background: rgba(255, 255, 255, 35%);
+    transition: var(--first-transition);
+}
+#side_nav .menu_item .dropdown_menu .dropdown_item li:hover {
+    background: rgba(255, 255, 255, 100%);
+}
+/* ||Side Nav Css End|| */
+
+/* Main Contained Css Start */
+#main_contained {
+    margin-left: 280px;
+}
+/* ||Main Contained Css End|| */
