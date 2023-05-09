@@ -89,44 +89,54 @@ ul {
     color: var(--focus-color);
 }
 
-#side_nav .menu_item .dropdown_menu {
-    overflow: hidden;
-    transition: var(--first-transition) !important;
+/* ========== */
+#side_nav .accordion-header button {
+    background: var(--focus-color);
+    color: var(--prime-color);
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
-#side_nav .menu_item .dropdown_menu > li {
-    position: relative;
-    z-index: 11;
+#side_nav .accordion-header button i {
+    padding-right: 5px;
+}
+#side_nav .accordion-button i.fa-chevron-down {
+    padding-right: 0;
     transition: var(--first-transition);
 }
-#side_nav .menu_item .dropdown_menu li .dropdown_icon i {
-    padding-right: 10px;
+#side_nav .accordion-button:not(.collapsed) i.fa-chevron-down {
+    transform: rotate(180deg);
 }
-
-#side_nav .menu_item .dropdown_item {
-    position: relative;
-    display: none;
-    z-index: -1;
-    margin-top: 190px;
-    transition: var(--first-transition) !important;
-}
-#side_nav .menu_item .dropdown_menu:hover .dropdown_item {
-    display: block;
-    z-index: 1;
-    margin-top: 0;
-}
-#side_nav .menu_item .dropdown_menu:hover > li {
+#side_nav .accordion-button:not(.collapsed) {
     background: var(--prime-color);
     color: var(--focus-color);
 }
-#side_nav .menu_item .dropdown_menu:hover > li a {
+#side_nav .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+    background: var(--prime-color);
+    color: var(--focus-color);
+}
+#side_nav .accordion-header button:hover {
+    background: var(--prime-color);
     color: var(--focus-color);
 }
 
-#side_nav .menu_item .dropdown_menu .dropdown_item li {
+#side_nav .accordion-header button::after {
+    display: none;
+}
+#side_nav .accordion-button:not(.collapsed)::after {
+    display: none;
+}
+
+#side_nav .accordion-body {
+    padding: 0;
+}
+#side_nav .accordion-body li {
     background: rgba(255, 255, 255, 35%);
     transition: var(--first-transition);
 }
-#side_nav .menu_item .dropdown_menu .dropdown_item li:hover {
+#side_nav .accordion-body li:hover {
     background: rgba(255, 255, 255, 100%);
 }
 /* ||Side Nav Css End|| */
