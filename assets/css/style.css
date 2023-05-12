@@ -63,6 +63,11 @@ label {
     font-weight: 500;
     padding-bottom: 5px;
 }
+label.bottom-label {
+    padding-bottom: 0px;
+    padding-top: 5px;
+    color: var(--secondary-font-color);
+}
 input {
     display: block;
     width: 100%;
@@ -90,7 +95,7 @@ button {
 button a {
     display: block;
     background: var(--focus-color);
-    border: 2px solid var(--focus-color);
+    border: 1px solid var(--focus-color);
     color: var(--prime-color);
     padding: 10px 12px;
     border-radius: 8px;
@@ -100,6 +105,7 @@ button a {
 }
 button a:hover {
     background: var(--prime-color);
+    box-shadow: 0px 3px 14px 0px rgba(247, 0, 0, 0.55);
     color: var(--focus-color);
 }
 /* Side Nav Css Start */
@@ -281,7 +287,9 @@ Login Page Css Start
     font-size: 30px;
     line-height: 38px;
 }
-#login .login-heading h6 {
+#login .login-heading h6,
+#login .back-btn a,
+#login .resend-btn p {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -293,6 +301,17 @@ Login Page Css Start
 #login .from-item .forgot-pass {
     font-size: 14px;
     font-weight: 500;
+    color: var(--focus-color);
+}
+
+#login .back-btn,
+#login .resend-btn {
+    padding-top: 25px;
+}
+#login .resend-btn a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
     color: var(--focus-color);
 }
 /* ===============

@@ -1,0 +1,16 @@
+@media (min-width: 1500px) and (max-width: 1819.98px) {
+}
+@media (max-width: 566.98px) {
+    /* Main Contained */
+    /* Login Page */
+    #login {
+        width: 100%;
+        padding: 15px;
+    }
+    #login .login-heading h1 {
+        font-size: 24px;
+    }
+    #login .login-heading h6 {
+        font-size: 14px;
+    }
+}

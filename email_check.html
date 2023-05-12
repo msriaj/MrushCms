@@ -30,55 +30,38 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
         <!--==================================================================-->
 
-        <title>Log in- (Rush)</title>
+        <title>Check Email- (Rush)</title>
     </head>
     <body>
         <section id="login">
             <div class="login-container text-center">
-                <img src="assets/images/Rush-Logo.png" alt="" />
+                <img src="assets/images/Featured-icon-2.png" alt="" />
                 <div class="login-heading">
-                    <h1>Log in to your account</h1>
-                    <h6>Welcome back! Please enter your details.</h6>
+                    <h1>Check your email</h1>
+                    <h6>
+                        We sent a password reset link to <br />mike@rush.co.za
+                    </h6>
                 </div>
                 <div class="login-form text-start">
                     <form>
-                        <div class="from-item">
-                            <label for="email">Email</label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="Enter your email"
-                            />
-                        </div>
-                        <div class="from-item">
-                            <label for="password">Password</label>
-                            <input
-                                type="password"
-                                name="password"
-                                id="password"
-                                placeholder="••••••••"
-                            />
-                        </div>
-                        <div
-                            class="from-item d-flex align-items-center justify-content-between"
-                        >
-                            <span class="d-flex align-items-center"
-                                ><input type="checkbox" id="login-remember" />
-                                <label
-                                    class="checkbox-text"
-                                    for="login-remember"
-                                >
-                                    Remember for 30 days</label
-                                >
-                            </span>
-                            <a class="forgot-pass" href="forgot_pass.html"
-                                >Forgot password</a
-                            >
-                        </div>
                         <button>
-                            <a href="dashboard.html">Sign in</a>
+                            <a href="set_password.html">Open email app</a>
                         </button>
+                        <div class="resend-btn text-center">
+                            <p>
+                                Didn’t receive the email?<a
+                                    href="email_check.html"
+                                >
+                                    Click to resend</a
+                                >
+                            </p>
+                        </div>
+                        <div class="back-btn text-center">
+                            <a href="index.html">
+                                <i class="fa-solid fa-arrow-left"></i> Back to
+                                log in
+                            </a>
+                        </div>
                     </form>
                 </div>
             </div>
