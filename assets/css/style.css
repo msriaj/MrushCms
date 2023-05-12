@@ -1,9 +1,25 @@
+/* =====================================
+Theme Name: RUSH Admin Panel
+==================
+Table of Content
+==================
+    ~~~~~~~~~~~~~~~~~~~~~~
+    1. Common Css
+    --------------------
+        1.1- Side Nav
+        1.2- Main Contained
+    ~~~~~~~~~~~~~~~~~~~~~~
+    2. Login Page
+    ~~~~~~~~~~~~~~~~~~~~~~
+===================================== */
+
 /* Google Font- "Poppins" */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 
 /* ||Common Css Start|| */
 body {
     font-family: "Inter", sans-serif;
+    color: var(--regular-font-color);
     /* overflow: hidden; */
 }
 h1,
@@ -26,9 +42,9 @@ ul {
     padding: 0;
     margin: 0;
 }
-/* ul li {
+/* utl li {
     display: inline-block;
-    text-decoration: none;
+    ext-decoration: none;
 } */
 :root {
     /*color*/
@@ -41,8 +57,51 @@ ul {
     --regular-font-color: #101828;
     --secondary-font-color: #667085;
 }
-/* ||Common Css End|| */
 
+label {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px 14px;
+    border: 1px solid var(--secondary-font-color);
+}
+input#login-remember {
+    display: inline-block;
+    width: auto;
+    align-items: center;
+}
+label.checkbox-text {
+    padding-bottom: 0px;
+    padding-left: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+}
+button a {
+    display: block;
+    background: var(--focus-color);
+    border: 2px solid var(--focus-color);
+    color: var(--prime-color);
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: var(--first-transition);
+}
+button a:hover {
+    background: var(--prime-color);
+    color: var(--focus-color);
+}
 /* Side Nav Css Start */
 #side_nav {
     background-color: var(--focus-color);
@@ -167,6 +226,10 @@ ul {
     font-weight: 500;
     padding: 8px;
 }
+#side_nav .side_nav_bottom a.view {
+    background: var(--prime-color);
+    color: var(--focus-color);
+}
 #side_nav .side_nav_bottom .user_details {
     padding-top: 25px;
     color: var(--prime-color);
@@ -197,3 +260,41 @@ ul {
     line-height: 38px;
 }
 /* ||Main Contained Css End|| */
+
+/* ||Common Css End|| */
+
+/* ===============
+Login Page Css Start
+=============== */
+#login {
+    position: fixed;
+    width: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#login .login-heading {
+    padding: 22px 0;
+}
+#login .login-heading h1 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+}
+#login .login-heading h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--secondary-font-color);
+}
+#login .from-item {
+    padding-bottom: 20px;
+}
+#login .from-item .forgot-pass {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--focus-color);
+}
+/* ===============
+Login Page Css End
+=============== */
